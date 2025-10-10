@@ -7,6 +7,6 @@ int main(int argc,char** argv) {
     for (int i = 0; i < 10; i++) {
         sum += num[i];
     }
-    printf("%.2lf", (sum / (double)10));
+    printf("%.3lf", (sum / (double)10));
     return 0;
 }
