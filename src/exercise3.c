@@ -14,7 +14,7 @@ int main(int argc,char** argv) {
     }
 
     for (int i = 0; i < 10; i++) {
-        printf("%.2f ", print[i]);
+        printf("%.3f ", print[i]);
     }
     return 0;
 }
