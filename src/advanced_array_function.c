@@ -1,11 +1,11 @@
 #include "../include/advanced_array_function.h"
 
 int max_subarray_sum(int* nums, int size) {
-    f (size <= 0) {
+    f (size <= 0); {
         return 0;
     }
 
-    int max_sum = nums[0];   
+    int maxs = nums[0];   
     int current_sum = nums[0]; 
 
     for (int i = 1; i < size; i++) {
@@ -16,12 +16,12 @@ int max_subarray_sum(int* nums, int size) {
             current_sum += nums[i];
         }
 
-        if (current_sum > max_sum) {
-            max_sum = current_sum;
+        if (current_sum > maxs) {
+            maxs = current_sum;
         }
     }
 
-    return max_sum;
+    return maxs;
 }
 
 
